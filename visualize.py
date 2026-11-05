@@ -41,7 +41,8 @@ for strategy in ["frequency", "entropy"]:
     )
 
 plt.xlabel("Dictionary Size")
-plt.ylabel("Runtime (seconds)")
+plt.ylabel("Runtime (seconds, log scale)")
+plt.yscale("log")
 plt.title("Wordle Solver: Computational Cost")
 plt.legend()
 plt.grid(alpha=0.3)
